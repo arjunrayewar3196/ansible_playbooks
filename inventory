@@ -1,0 +1,12 @@
+[win]
+18.217.231.147
+
+[win:vars]
+ansible_user='Administrator'
+ansible_connection=winrm
+ansible_winrm_transport=certificate
+ansible_winrm_cert_pem=/root/ansible-winrm-cert-auth/ansible_server/client_cert.pem
+ansible_winrm_cert_key_pem=/root/ansible-winrm-cert-auth/ansible_server/client_key.pem
+ansible_port=5986
+ansible_winrm_scheme=https
+ansible_winrm_server_cert_validation=ignore
