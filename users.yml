@@ -1,0 +1,12 @@
+---
+- name: creating user on windows server
+  hosts: win
+  gather_facts: false
+  tasks:
+    - name: create user
+      win_user:
+        name: Arjun
+        password: B0bP4ssw0rd
+        state: present
+        groups:
+          - Administrators
